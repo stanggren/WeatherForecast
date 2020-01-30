@@ -1,0 +1,334 @@
+﻿<Page
+    x:Class="WeatherReport.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WeatherReport"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:animationControls="using:Microsoft.UI.Xaml.Controls"
+    xmlns:lottie="using:Microsoft.Toolkit.Uwp.UI.Lottie"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" xmlns:models="using:WeatherReport.Models">
+    <Page.Resources>
+        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#9ebbc6"/>
+        <LinearGradientBrush x:Key="BackgroundGrid" StartPoint="0,1" EndPoint="0,0">
+            <GradientStop Color="#ebf1f3" Offset="0.50"/>
+            <GradientStop Color="#d7e3e8" Offset="0.65"/>
+            <GradientStop Color="#3a758c" Offset="0.98"/>
+        </LinearGradientBrush>
+    </Page.Resources>
+    <Grid Background="{StaticResource BackgroundGrid}"
+          SizeChanged="CollapsedHeader">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="1"
+              Height="200"
+              Width="220"
+              x:Name="WelcomeMessage"
+              Margin="0 120 0 0"
+              VerticalAlignment="Top"
+              >
+            <controls:DropShadowPanel BlurRadius="70.0"
+                                    ShadowOpacity="0.42"
+                                    OffsetX="5"
+                                    OffsetY="5"
+                                    Color="Black"
+                                    >
+                <StackPanel 
+                Background="#88acba"
+                CornerRadius="30"
+                    Width="220"
+                    Height="200">
+                    <Border 
+                    Height="200"
+                Visibility="Visible">
+                        <animationControls:AnimatedVisualPlayer>
+                            <lottie:LottieVisualSource UriSource="ms-appx:///Images//4792-weather-stormshowersday.json"/>
+                        </animationControls:AnimatedVisualPlayer>
+                    </Border>
+                </StackPanel>
+            </controls:DropShadowPanel>
+        </Grid>
+
+        <Border 
+            x:Name="LoadingAnimation"
+                Grid.Row="1"
+                Width="600"
+                Height="600"
+                VerticalAlignment="Top"
+                Margin="0 -90 0 0"
+                Visibility="Collapsed"
+                >
+            <animationControls:AnimatedVisualPlayer>
+                <lottie:LottieVisualSource UriSource="ms-appx:///Images//7420-clouds-opening.json"/>
+            </animationControls:AnimatedVisualPlayer>
+        </Border>
+        <Border 
+            x:Name="LoadingLocation"
+                Grid.Row="1"
+                Width="300"
+                Height="300"
+                VerticalAlignment="Top"
+                Margin="0 50 0 0"
+                Visibility="Collapsed"
+                >
+            <animationControls:AnimatedVisualPlayer>
+                <lottie:LottieVisualSource UriSource="ms-appx:///Images//6843-map-location.json"/>
+            </animationControls:AnimatedVisualPlayer>
+        </Border>
+
+        <RelativePanel Grid.Row="0">
+            <TextBlock RelativePanel.LeftOf="ComboBoxDays"
+                       Text="Days"
+                       Margin="0 30 5 0"
+                       FontSize="20"
+                       Foreground="#9ebbc6"
+                       x:Name="ComboBoxText"
+                />
+            <Grid RelativePanel.LeftOf="ComboBoxText"
+                  x:Name="LocationButton"
+                  Margin="0 30 12 0"
+                  Width="30"
+                  Height="30"
+                  Tapped="ClickLocation"
+                  PointerEntered="LocationHover"
+                  PointerExited="LocationHoverExited">
+                <Ellipse
+                    Fill="#9ebbc6"
+                    StrokeThickness="0"
+                    >
+                </Ellipse>
+                <FontIcon FontFamily="Segoe MDL2 Assets"
+                          Glyph="&#xE7B7;"
+                          VerticalAlignment="Center"
+                          HorizontalAlignment="Center"
+                          Foreground="#34697e"
+                          />
+            </Grid>
+            <TextBlock Text="Get your location"
+                       RelativePanel.LeftOf="LocationButton"
+                       FontSize="20"
+                       Foreground="#9ebbc6"
+                       Margin="0 30 5 0"
+                       x:Name="LocationText"/>
+            <ComboBox RelativePanel.LeftOf="SearchBox"
+                      Margin="0 30 2 0 "
+                      BorderBrush="#3a758c"
+                      x:Name="ComboBoxDays"
+                      SelectionChanged="ChangedDays"
+                      CornerRadius="10">
+                <ComboBoxItem IsSelected="True">4</ComboBoxItem>
+                <ComboBoxItem>5</ComboBoxItem>
+                <ComboBoxItem>6</ComboBoxItem>
+                <ComboBoxItem>7</ComboBoxItem>
+                <ComboBoxItem>8</ComboBoxItem>
+                <ComboBoxItem>9</ComboBoxItem>
+                <ComboBoxItem>10</ComboBoxItem>
+                <ComboBoxItem>11</ComboBoxItem>
+                <ComboBoxItem>12</ComboBoxItem>
+                <ComboBoxItem>13</ComboBoxItem>
+                <ComboBoxItem>14</ComboBoxItem>
+                <ComboBoxItem>15</ComboBoxItem>
+                <ComboBoxItem>16</ComboBoxItem>
+            </ComboBox>
+            <TextBlock
+                Foreground="#f1f5f7"
+                x:Name="Header"
+                Text="Weather Forecast"
+                RelativePanel.RightOf="Logo"
+                FontSize="30"
+                Margin="4 24 10 0"
+                Tapped="GetHome"
+                PointerEntered="HeaderHover"
+                PointerExited="HeaderHoverExited"
+                />
+            <Image
+                x:Name="Logo"
+                Source="Images/logo.png"
+                Margin="15 6 10 0"
+                Height="60"
+                Tapped="GetHome"
+                PointerEntered="HeaderImageHover"
+                PointerExited="HeaderImageHoverExited"
+                />
+            <TextBox x:Name="SearchBox"
+                BorderBrush="#3a758c"
+                Height="40"
+                Width="300"
+                Margin="0 20 15 0"
+                FontSize="20"
+                PlaceholderText="Enter location..."
+                CornerRadius="10"
+                KeyUp="PressEnterSearch"
+                RelativePanel.AlignRightWithPanel="True"
+                Text="{x:Bind ViewModel.SearchString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        </RelativePanel>
+        
+        <Grid Grid.Row="1" x:Name="WeatherContent">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ItemsControl ItemsSource="{x:Bind ViewModel.CurrentDay, Mode=OneWay}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate x:DataType="models:Today">
+                        <Grid  
+                            Grid.Row="0"
+                            HorizontalAlignment="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <StackPanel Padding="20" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+                                <TextBlock
+                                Grid.Row="0"
+                                Text="{x:Bind Name}"
+                                Foreground="Black"
+                                FontSize="46"
+                                Margin="0 20 0 0"/>
+                                <TextBlock
+                                Grid.Row="0"
+                                Text="{x:Bind Timezone}"
+                                Foreground="Black"
+                                FontSize="30"
+                                Margin="0 0 0 0"/>
+                            </StackPanel>
+                            <RelativePanel Grid.Row="1">
+                                <TextBlock
+                                    x:Name="Temperature"
+                                    FontSize="100"
+                                    Text="{x:Bind Day.Temperature}"
+                                    RelativePanel.RightOf="TodayWeatherLogo"/>
+                                <Image x:Name="TodayWeatherLogo" 
+                                   Source="{x:Bind Day.Weather.Icon}"
+                                   RelativePanel.AlignLeftWithPanel="True"
+                                   Height="140"/>
+                                <TextBlock x:Name="DegreeSymbol"
+                                   Text="°"
+                                   FontSize="100"
+                                   RelativePanel.RightOf="Temperature"/>
+                                <TextBlock x:Name="C"
+                                   Text="C"
+                                   FontSize="60"
+                                   RelativePanel.RightOf="DegreeSymbol"
+                                   Margin="0 45 0 0"/>
+                            </RelativePanel>
+                            <StackPanel Grid.Row="2">
+                                <TextBlock FontSize="30"
+                                           Text="{x:Bind Day.Weather.Description}"
+                                           Margin="70 0 0 0"
+                                           />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Grid.Row="3">
+                                <RelativePanel Margin="20 20 20 0">
+                                    <TextBlock x:Name="MinTempText"
+                                    Text="Min temp:"
+                                    FontSize="20"
+                                    Margin="0 0 8 0"
+                                    />
+                                    <TextBlock
+                                    x:Name="MinTemp"
+                                    FontSize="20"
+                                    FontWeight="Bold"
+                                    Text="{x:Bind Day.MinTemperature}"
+                                    RelativePanel.RightOf="MinTempText"/>
+                                    <TextBlock x:Name="DegreeSymbolMinTemp"
+                                   Text="°"
+                                   FontSize="20"
+                                   RelativePanel.RightOf="MinTemp"/>
+                                    <TextBlock x:Name="CMinTemp"
+                                   Text="C"
+                                   FontSize="15"
+                                   RelativePanel.RightOf="DegreeSymbolMinTemp"
+                                   Margin="0 6 0 0"/>
+                                </RelativePanel>
+                                <RelativePanel Margin="0 20 0 0">
+                                    <TextBlock x:Name="MaxTempText"
+                                    Text="Max temp:"
+                                    FontSize="20"
+                                    Margin="0 0 8 0"
+                                    />
+                                    <TextBlock
+                                    x:Name="MaxTemp"
+                                    FontSize="20"
+                                    FontWeight="Bold"
+                                    Text="{x:Bind Day.MaxTemperature}"
+                                    RelativePanel.RightOf="MaxTempText"/>
+                                    <TextBlock x:Name="DegreeSymbolMaxTemp"
+                                   Text="°"
+                                   FontSize="20"
+                                   RelativePanel.RightOf="MaxTemp"/>
+                                    <TextBlock x:Name="CMaxTemp"
+                                   Text="C"
+                                   FontSize="15"
+                                   RelativePanel.RightOf="DegreeSymbolMaxTemp"
+                                   Margin="0 6 0 0"/>
+                                </RelativePanel>
+                            </StackPanel>
+
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <ScrollViewer Grid.Row="1">
+                <ItemsControl   ItemsSource="{x:Bind ViewModel.Days, Mode=OneWay}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VariableSizedWrapGrid HorizontalAlignment="Center" Orientation="Horizontal" MaximumRowsOrColumns="8" Grid.Row="1"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="models:Day">
+                            <controls:DropShadowPanel BlurRadius="17.0"
+                                                  ShadowOpacity="0.35"
+                                                  OffsetX="26.0"
+                                                  OffsetY="25.0"
+                                                  Color="Black"
+                                                      CornerRadius="10">
+                                <StackPanel Background="White" Margin="20" Width="150" Orientation="Horizontal" BorderBrush="White" BorderThickness="2" Opacity="0.8" CornerRadius="10">
+                                    <RelativePanel Margin="10 2 0 5">
+                                        <TextBlock x:Name="DayOne"
+                                               Text="{x:Bind Date, Mode=OneWay}"
+                                               FontSize="15"
+                                               FontWeight="Bold"/>
+                                        <Image x:Name="ImageDayOne"
+                                           RelativePanel.Below="DayOne"
+                                           Source="{x:Bind Weather.Icon, Mode=OneWay}"
+                                           Height="60"/>
+                                        <RelativePanel RelativePanel.Below="ImageDayOne" x:Name="DayOnePanel">
+                                            <TextBlock x:Name="TempDayOne"
+                                                   Text="{x:Bind Temperature}"
+                                                   FontSize="40"/>
+                                            <TextBlock x:Name="DegreeSymbolDayOne"
+                                                   Text="°"
+                                                   FontSize="40"
+                                                   RelativePanel.RightOf="TempDayOne"/>
+                                            <TextBlock x:Name="CDayOne"
+                                                   Text="C"
+                                                   FontSize="20"
+                                                   RelativePanel.RightOf="DegreeSymbolDayOne"
+                                                   Margin="0 20"/>
+                                        </RelativePanel>
+                                        <TextBlock x:Name="InfoDayOne"
+                                               Text="{x:Bind Weather.Description}"
+                                               FontSize="18"
+                                               RelativePanel.Below="DayOnePanel"/>
+                                    </RelativePanel>
+                                </StackPanel>
+                            </controls:DropShadowPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>

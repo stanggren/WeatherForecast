@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-04KSD38</Machine>
+    <WindowsUser>sebbe</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>89653cc7-1b6d-4119-8782-ba9287ded799</PackageIdentityName>
+    <PackageIdentityPublisher>CN=sebbe</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\obj\x86\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>223C51DC957251E9A1DC28E6E6DAF7061F6D5692D684EE011E7176C669688DFE</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>89653cc7-1b6d-4119-8782-ba9287ded799_1.0.0.0_x86__n3ph1dry6k0h4</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>89653cc7-1b6d-4119-8782-ba9287ded799_n3ph1dry6k0h4!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>89653cc7-1b6d-4119-8782-ba9287ded799</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=sebbe</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-01-22T11:42:40.826</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\bin\x86\Debug\WeatherReport.exe">
+      <PackagePath>entrypoint\WeatherReport.exe</PackagePath>
+      <Modified>2020-01-22T11:42:39.410</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
+      <PackagePath>ColorCode.Core.dll</PackagePath>
+      <Modified>2018-10-05T21:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\colorcode.uwp\2.0.6\lib\uap10.0\ColorCode.UWP.dll">
+      <PackagePath>ColorCode.UWP.dll</PackagePath>
+      <Modified>2018-10-05T21:30:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\microsoft.toolkit\6.0.0\lib\netstandard2.0\Microsoft.Toolkit.dll">
+      <PackagePath>Microsoft.Toolkit.dll</PackagePath>
+      <Modified>2019-11-13T01:36:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\microsoft.toolkit.parsers\6.0.0\lib\netstandard2.0\Microsoft.Toolkit.Parsers.dll">
+      <PackagePath>Microsoft.Toolkit.Parsers.dll</PackagePath>
+      <Modified>2019-11-13T01:36:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\microsoft.toolkit.uwp\6.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.dll</PackagePath>
+      <Modified>2019-11-13T01:36:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\microsoft.toolkit.uwp.ui\6.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.dll</PackagePath>
+      <Modified>2019-11-13T01:36:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\microsoft.toolkit.uwp.ui.animations\6.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Animations.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Animations.dll</PackagePath>
+      <Modified>2019-11-13T01:36:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\microsoft.toolkit.uwp.ui.controls\6.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.dll</PackagePath>
+      <Modified>2019-11-13T01:36:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+      <Modified>2016-02-22T12:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+      <Modified>2016-02-22T12:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2019-11-08T23:56:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+      <Modified>2019-07-22T13:01:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\system.runtime.compilerservices.unsafe\4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+      <Modified>2019-09-13T00:28:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\win2d.uwp\1.24.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+      <Modified>2019-10-25T21:27:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\microsoft.toolkit.uwp.ui.lottie\6.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Lottie.winmd">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Lottie.winmd</PackagePath>
+      <Modified>2019-11-13T17:55:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\win2d.uwp\1.24.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+      <Modified>2019-10-25T21:27:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+      <Modified>2019-03-18T16:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\4792-weather-stormshowersday.json">
+      <PackagePath>Images\4792-weather-stormshowersday.json</PackagePath>
+      <Modified>2020-01-15T11:03:18.593</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\6843-map-location.json">
+      <PackagePath>Images\6843-map-location.json</PackagePath>
+      <Modified>2020-01-13T11:50:37.420</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\7420-clouds-opening.json">
+      <PackagePath>Images\7420-clouds-opening.json</PackagePath>
+      <Modified>2020-01-13T10:36:47.362</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\a01d.png">
+      <PackagePath>Images\a01d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.727</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\a01n.png">
+      <PackagePath>Images\a01n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.731</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\a02d.png">
+      <PackagePath>Images\a02d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.734</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\a02n.png">
+      <PackagePath>Images\a02n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.737</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\a03d.png">
+      <PackagePath>Images\a03d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.741</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\a03n.png">
+      <PackagePath>Images\a03n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.744</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\a04d.png">
+      <PackagePath>Images\a04d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.747</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\a04n.png">
+      <PackagePath>Images\a04n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.750</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\a05d.png">
+      <PackagePath>Images\a05d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\a05n.png">
+      <PackagePath>Images\a05n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.757</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\a06d.png">
+      <PackagePath>Images\a06d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.759</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\a06n.png">
+      <PackagePath>Images\a06n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.762</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\c01d.png">
+      <PackagePath>Images\c01d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.766</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\c01n.png">
+      <PackagePath>Images\c01n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\c02d.png">
+      <PackagePath>Images\c02d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.775</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\c02n.png">
+      <PackagePath>Images\c02n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.778</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\c03d.png">
+      <PackagePath>Images\c03d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.782</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\c03n.png">
+      <PackagePath>Images\c03n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.784</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\c04d.png">
+      <PackagePath>Images\c04d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.788</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\c04n.png">
+      <PackagePath>Images\c04n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.791</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\d01d.png">
+      <PackagePath>Images\d01d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.793</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\d01n.png">
+      <PackagePath>Images\d01n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.796</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\d02d.png">
+      <PackagePath>Images\d02d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\d02n.png">
+      <PackagePath>Images\d02n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\d03d.png">
+      <PackagePath>Images\d03d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\d03n.png">
+      <PackagePath>Images\d03n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\f01d.png">
+      <PackagePath>Images\f01d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.811</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\f01n.png">
+      <PackagePath>Images\f01n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\logo.png">
+      <PackagePath>Images\logo.png</PackagePath>
+      <Modified>2019-12-11T14:23:58.480</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\r01d.png">
+      <PackagePath>Images\r01d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\r01n.png">
+      <PackagePath>Images\r01n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\r02d.png">
+      <PackagePath>Images\r02d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\r02n.png">
+      <PackagePath>Images\r02n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.825</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\r03d.png">
+      <PackagePath>Images\r03d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.827</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\r03n.png">
+      <PackagePath>Images\r03n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.835</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\r04d.png">
+      <PackagePath>Images\r04d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.838</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\r04n.png">
+      <PackagePath>Images\r04n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.840</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\r05d.png">
+      <PackagePath>Images\r05d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.843</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\r05n.png">
+      <PackagePath>Images\r05n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.847</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\r06d.png">
+      <PackagePath>Images\r06d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.849</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\r06n.png">
+      <PackagePath>Images\r06n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.852</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\s01d.png">
+      <PackagePath>Images\s01d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.854</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\s01n.png">
+      <PackagePath>Images\s01n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.857</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\s02d.png">
+      <PackagePath>Images\s02d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.860</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\s02n.png">
+      <PackagePath>Images\s02n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.862</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\s03d.png">
+      <PackagePath>Images\s03d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.865</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\s03n.png">
+      <PackagePath>Images\s03n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.867</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\s04d.png">
+      <PackagePath>Images\s04d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.870</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\s04n.png">
+      <PackagePath>Images\s04n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.873</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\s05d.png">
+      <PackagePath>Images\s05d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.876</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\s05n.png">
+      <PackagePath>Images\s05n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.879</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\s06d.png">
+      <PackagePath>Images\s06d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.883</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\s06n.png">
+      <PackagePath>Images\s06n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.887</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\t01d.png">
+      <PackagePath>Images\t01d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\t01n.png">
+      <PackagePath>Images\t01n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\t02d.png">
+      <PackagePath>Images\t02d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.896</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\t02n.png">
+      <PackagePath>Images\t02n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.905</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\t03d.png">
+      <PackagePath>Images\t03d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\t03n.png">
+      <PackagePath>Images\t03n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.911</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\t04d.png">
+      <PackagePath>Images\t04d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\t04n.png">
+      <PackagePath>Images\t04n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.918</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\t05d.png">
+      <PackagePath>Images\t05d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.922</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\t05n.png">
+      <PackagePath>Images\t05n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.926</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\u00d.png">
+      <PackagePath>Images\u00d.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Images\u00n.png">
+      <PackagePath>Images\u00n.png</PackagePath>
+      <Modified>2019-12-12T14:23:37.932</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2019-12-02T15:33:12.750</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-12-02T15:33:12.750</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-12-02T15:33:12.750</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-12-02T15:33:12.750</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-12-02T15:33:12.750</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-12-02T15:33:12.750</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-12-02T15:33:12.750</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2019-12-09T13:48:49.511</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\bin\x86\Debug\WeatherReport.xr.xml">
+      <PackagePath>WeatherReport.xr.xml</PackagePath>
+      <Modified>2020-01-20T11:48:40.327</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\bin\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
+      <PackagePath>Microsoft.UI.Xaml\DensityStyles\Compact.xbf</PackagePath>
+      <Modified>2020-01-22T10:55:55.432</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2020-01-22T10:55:55.432</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\bin\x86\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2020-01-22T10:55:55.431</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\bin\x86\Debug\UserControls\WeatherControl.xbf">
+      <PackagePath>UserControls\WeatherControl.xbf</PackagePath>
+      <Modified>2020-01-22T10:55:55.432</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+      <Modified>2019-03-18T16:43:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+      <Modified>2019-03-18T15:33:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\microsoft.ui.xaml\2.2.190917002\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+      <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
+      <Modified>2019-09-18T01:58:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\microsoft.toolkit.uwp.ui.controls\6.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml</PackagePath>
+      <Modified>2019-11-13T01:32:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\.nuget\packages\microsoft.toolkit.uwp.ui.lottie\6.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Lottie\Microsoft.Toolkit.Uwp.UI.Lottie.xr.xml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Lottie\Microsoft.Toolkit.Uwp.UI.Lottie.xr.xml</PackagePath>
+      <Modified>2019-11-13T17:54:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2020-01-15T11:04:13.125</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\bin\x86\Debug\Core\WeatherReport.exe">
+      <PackagePath>WeatherReport.exe</PackagePath>
+      <Modified>2020-01-22T11:42:40.820</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\sebbe\.nuget\packages\microsoft.ui.xaml\2.2.190917002\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.2.appx">
+      <Name>Microsoft.UI.Xaml.2.2</Name>
+      <Version>2.21909.17002.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.2, MinVersion = 2.21909.17002.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\sebbe\.nuget\packages\microsoft.ui.xaml\2.2.190917002\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27909.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27909.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27909.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

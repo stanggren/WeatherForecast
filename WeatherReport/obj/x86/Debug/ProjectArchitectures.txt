@@ -1,0 +1,1 @@
+C:\Users\sebbe\source\repos\WeatherReport\WeatherReport\WeatherReport.csproj;x86
